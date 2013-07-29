@@ -38,5 +38,7 @@ con cualquier navegador web.
 [1] http://docutils.sourceforge.net/rst.html
 [2] http://sphinx.pocoo.org/
 
-
+==============================================================================================
+Colaboración al Libro de Django en español del Frente de Liberación Tecnológica Simón Bolívar
+==============================================================================================
 
