@@ -124,7 +124,7 @@ Cuando ejecutaste ``django-admin.py startproject`` en el capítulo anterior, el
 script creó automáticamente una URLconf por tí: el archivo ``urls.py``.
 Editemos ese archivo. Por omisión, se verá como::
 
-    from django.conf.urls.defaults import *
+    from django.conf.urls import *
 
     urlpatterns = patterns('',
         # Example:
@@ -158,7 +158,7 @@ tanto, muestra ese mensaje).
 
 Editemos este archivo para exponer nuestra vista ``current_datetime``::
 
-    from django.conf.urls.defaults import *
+    from django.conf.urls import *
     from mysite.views import current_datetime
 
     urlpatterns = patterns('',
@@ -469,7 +469,7 @@ patrón URL. Como ya se mencionó antes, un patrón URL es una expresión regula
 de aquí, es que usamos el patrón de expresión regular ``\d+`` para que
 coincida con uno o más dígitos::
 
-    from django.conf.urls.defaults import *
+    from django.conf.urls import *
     from mysite.views import current_datetime, hours_ahead
 
     urlpatterns = patterns('',
@@ -510,7 +510,7 @@ coincide.
 La URLconf final, incluyendo la vista anterior ``current_datetime``, nos
 quedará algo así::
 
-    from django.conf.urls.defaults import *
+    from django.conf.urls import *
     from mysite.views import current_datetime, hours_ahead
 
     urlpatterns = patterns('',
